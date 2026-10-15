@@ -40,21 +40,30 @@ A next-generation frontend research platform for **Privacy-Preserving Quantum He
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/Jhansi-Pottipadu/Q-HealthGuard.git
-cd Q-HealthGuard
+git clone https://github.com/jeswantharadhyula-max/Quantum_AI_Privacy.git
+cd Quantum_AI_Privacy
 ```
 
-### 2. Install dependencies
+### 2. Frontend Setup (React + Vite)
 ```bash
 npm install --legacy-peer-deps
-```
-
-### 3. Run the development server
-```bash
 npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### 3. Backend Setup (FastAPI + Qiskit)
+```bash
+cd backend
+python -m venv .venv
+# Windows:
+.venv\Scripts\activate
+# Linux/macOS:
+source .venv/bin/activate
+
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
 
 ### 4. Build for production
 ```bash
